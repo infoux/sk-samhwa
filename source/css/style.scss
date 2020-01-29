@@ -947,6 +947,7 @@ body {
                     div.input-box {
                         padding-bottom:10px;
                         position:relative;
+                        font-size:0;
 
                         i {
                             position:absolute;
@@ -959,8 +960,7 @@ body {
                             background:#fff;
                         }
 
-                        input[type="text"],
-                        input[type="date"] {
+                        input {
                             font-size:16px;
                             outline:none;
                             height:42px;
@@ -968,6 +968,21 @@ body {
                             padding:0 10px;
                             border:none;
                             border-bottom:2px solid #333;
+                        }
+
+                        label {
+                            vertical-align:top;
+                            display:inline-block;
+                            line-height:40px;
+                            font-size:14px;
+                            width:100px;
+                            border-bottom:2px solid #333;
+                            font-weight:600;
+                        }
+
+                        label + input {
+                            display:inline-block;
+                            width:calc(100% - 100px);
                         }
 
                         &.period {
