@@ -1538,37 +1538,45 @@ body.site div#content section.board-form div.container div.file-box textarea {
   padding: 20px;
 }
 
-body.site div#content section.main-notice div.container > ul {
+body.site div#content section.notice-list div.container > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-body.site div#content section.main-notice div.container > ul > li {
+body.site div#content section.notice-list div.container > ul > li {
   display: block;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
   color: #999;
 }
 
-body.site div#content section.main-notice div.container > ul > li ul {
+body.site div#content section.notice-list div.container > ul > li ul {
   line-height: 1.4;
   list-style: none;
   margin: 6px 0 0;
   padding: 0;
 }
 
-body.site div#content section.main-notice div.container > ul > li ul li {
+body.site div#content section.notice-list div.container > ul > li ul li {
   display: inline-block;
   font-size: 13px;
   margin-right: 6px;
 }
 
-body.site div#content section.main-notice div.container > ul > li ul li i {
+body.site div#content section.notice-list div.container > ul > li ul li i {
   position: relative;
   top: 1px;
   margin-right: 4px;
   font-size: 14px;
+}
+
+body.site div#content section.notice-list.sub div.container {
+  margin: 20px 0;
+}
+
+body.site div#content section.notice-list.sub div.container > ul {
+  border-top: 2px solid #333;
 }
 
 body.site footer#footer {

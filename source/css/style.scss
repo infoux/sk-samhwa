@@ -1139,7 +1139,8 @@ body {
                 }
             }
 
-            section.main-notice {
+            section.notice-list {
+
                 div.container {
 
                     &>ul {
@@ -1176,6 +1177,18 @@ body {
                         
                     }
 
+                }
+
+                
+                
+                &.sub {
+                    div.container {
+                        margin:20px 0;
+
+                        &>ul {
+                            border-top:2px solid #333;
+                        }
+                    }
                 }
             }
 
