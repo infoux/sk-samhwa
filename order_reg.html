@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SK 삼화석유</title>
     <link href="source/css/boxicons.css" rel="stylesheet">
-    <link href="source/css/jquery.modal.css" rel="stylesheet">
     <link href="source/css/style.css" rel="stylesheet">
     <!-- javaScript  -->
     <script src="source/js/jquery-3.4.1.min.js"></script>
-    <script src="source/js/jquery.modal.js"></script>
     <script src="source/js/common.js"></script>
 </head>
 
@@ -102,229 +100,111 @@
                 <p>
                     지급수단 / 방법 : 출하일 기준 39일내 현금수급
 
-                    <button class="modal"><i class='bx bxs-info-circle'></i>상세내용 보기</button>
+                    <button id="mBtn"><i class='bx bxs-info-circle'></i>상세내용 보기</button>
+
+                    <!-- S:modal-->
+                    <div id="mModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <h2>대금지급 수단 / 방법</h2>
+                            <div>
+                                대금지급 수단/방법은 SK ERP I/F자료이므로 조회만 가능하고 수정작업이 되지 않습니다!
+
+                                <ol>
+                                    <li>출하일 기준 39일내 현금수급</li>
+                                    <li>완료</li>
+                                </ol>
+                            </div>
+
+                            <button class="modal-close">닫기 <i class='bx bx-x' ></i></button>
+                        </div>
+
+                      
+                      </div>
+                    <!-- E:modal-->
                 </p>
             </div>
         </article>
+          
 
-        <section class="latest-order">
+
+
+        <section class="order-form">
             <div class="container">
-                <h2 class="stitle">최근 주문 목록</h2>
 
-                <ul>
+                <h2 class="stitle">출하일자</h2>
+                <div class="input-box">
+                    <i class='bx bx-calendar' ></i>
+                    <input type="date" placeholder="날짜를 선택하세요">
+                </div>
+                
+
+
+                <h2 class="stitle">상품선택</h2>
+
+                
+                <div class="select-box">
+                    <i class='bx bx-chevron-down'></i>
+                    <label for="product_name">상품명</label>
+                    <select id="product_name">
+                        <option>상품명을 선택하세요</option>
+                        <option>상품명</option>
+                    </select>
+                </div>
+                <div class="select-box">
+                    <i class='bx bx-chevron-down'></i>
+                    <label for="product_count">주문수량</label>
+                    <select id="product_count">
+                        <option>주문수량을 선택하세요</option>
+                        <option>1리터</option>
+                    </select>
+                </div>
+
+                <div class="btn-set center">
+                    <button class="btn small outline inline">상품추가 <i class='bx bx-plus' ></i></button>
+                </div>
+
+                <ul class="order-list">
                     <li>
-                        <input id="latest01" name="latest" type="radio">
-                        <label for="latest01">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag03">배송완료</p>
-                        </div>
+                        <h3>상품명이 들어갑니다.</h3>
+                        <p><i class='bx bx-cart-alt' ></i> 주문수량 : 30L</p>
+                        <button class="delete">삭제 <i class='bx bx-x'></i></button>
                     </li>
-
-
                     <li>
-                        <input id="latest02" name="latest" type="radio">
-                        <label for="latest02">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag02">배차완료</p>
-                        </div>
+                        <h3>상품명이 들어갑니다.</h3>
+                        <p><i class='bx bx-cart-alt' ></i> 주문수량 : 30L</p>
+                        <button class="delete">삭제 <i class='bx bx-x'></i></button>
                     </li>
-
-
                     <li>
-                        <input id="latest03" name="latest" type="radio">
-                        <label for="latest03">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag02">배차완료</p>
-                        </div>
+                        <h3>상품명이 들어갑니다.</h3>
+                        <p><i class='bx bx-cart-alt' ></i> 주문수량 : 30L</p>
+                        <button class="delete">삭제 <i class='bx bx-x'></i></button>
                     </li>
-
-
-                    <li>
-                        <input id="latest04" name="latest" type="radio">
-                        <label for="latest04">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag02">배차완료</p>
-                        </div>
-                    </li>
-
-
-                    <li>
-                        <input id="latest05" name="latest" type="radio">
-                        <label for="latest05">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag02">배차완료</p>
-                        </div>
-                    </li>
-
-
-                    <li>
-                        <input id="latest06" name="latest" type="radio">
-                        <label for="latest06">
-                            <i class='bx bxs-spreadsheet'></i>
-                            주문일 : <strong></strong>2019-12-22 1-:11:11
-
-                            <i class='bx bx-chevron-right' ></i>
-                        </label>
-                        <div>
-                            <ul>
-                                <li>주문번호 : 17241113</li>
-                                <li>주문일자 : 2019-12-22 1-:11:11</li>
-                                <li>출하일자 : 2019-12-22 1-:11:11</li>
-                            </ul>
-
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <h3>
-                                DSL 0.001%
-                                <small>(수량: 24000/L15)</small>
-                            </h3>
-
-                            <p class="transport">수송조건: 조건값</p>
-                            <p class="tag tag02">배차완료</p>
-                        </div>
-                    </li>
-
-
-
-
 
                 </ul>
 
 
+                <h2 class="stitle">수송조건</h2>
+                <div class="select-box">
+                    <i class='bx bx-chevron-down'></i>
+                    <select>
+                        <option>수송조건을 선택하세요</option>
+                        <option>수송조건</option>
+                    </select>
+                </div>
 
+                <h2 class="stitle">비고</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="주문시 요청사항을 입력해 주세요">
+                </div>
+
+
+
+                <a class="btn big main">주문등록</a>
 
             </div>
         </section>
-        <article class="pagenation">
-
-            <a href="?pageIndex=1" title="처음으로" class="jump" onclick="linkPage(1);return false; ">처음<i class="bx bx-chevrons-left " aria-hidden="true"></i></a>
-            <a href="?pageIndex=1" title="이전 페이지로" class="move" onclick="linkPage(1);return false; ">이전<i class="bx bx-chevron-left " aria-hidden="true"></i></a>
-            <strong>1</strong>
-            <a href="?pageIndex=2" onclick="linkPage(2);return false; " title="2 페이지로">2</a>
-            <a href="?pageIndex=3" onclick="linkPage(3);return false; " title="3 페이지로">3</a>
-            <a href="?pageIndex=4" onclick="linkPage(4);return false; " title="4 페이지로">4</a>
-            <a href="?pageIndex=5" onclick="linkPage(5);return false; " title="5 페이지로">5</a>
-            <a href="?pageIndex=6" onclick="linkPage(6);return false; " title="6 페이지로">6</a>
-            <a href="?pageIndex=7" title="다음 페이지로" class="move" onclick="linkPage(7);return false; ">다음<i class="bx bx-chevron-right" aria-hidden="true"></i></a>
-            <a href="?pageIndex=13" title="마지막 페이지로" class="jump" onclick="linkPage(13);return false; ">마지막<i class="bx bx-chevrons-right" aria-hidden="true"></i></a>
-     
-     
-         </article>
-
 
     </div>
     <!-- E:mainContent -->
