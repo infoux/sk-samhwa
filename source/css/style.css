@@ -981,6 +981,7 @@ body.site article.sub_navi {
   position: fixed;
   z-index: 999;
   background: #efefef;
+  border-bottom: 1px solid #ccc;
   left: 0;
   right: 0;
   top: 62px;
@@ -1372,12 +1373,28 @@ body.site div#content section.order-form div.container div.input-box i {
 
 body.site div#content section.order-form div.container div.input-box input[type="text"],
 body.site div#content section.order-form div.container div.input-box input[type="date"] {
+  font-size: 16px;
   outline: none;
   height: 42px;
   width: 100%;
   padding: 0 10px;
   border: none;
   border-bottom: 2px solid #333;
+}
+
+body.site div#content section.order-form div.container div.input-box.period {
+  font-size: 0;
+}
+
+body.site div#content section.order-form div.container div.input-box.period input {
+  width: calc(50% - 20px);
+}
+
+body.site div#content section.order-form div.container div.input-box.period span {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
 }
 
 body.site div#content section.order-form div.container div.select-box {
@@ -1468,6 +1485,42 @@ body.site div#content section.order-form div.container ul.order-list li button.d
 
 body.site div#content section.order-form div.container ul.order-list li button.delete i {
   font-size: 22px;
+}
+
+body.site div#content section.board-form div.container {
+  padding-top: 20px;
+}
+
+body.site div#content section.board-form div.container div.input-box {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+body.site div#content section.board-form div.container div.input-box input[type="text"],
+body.site div#content section.board-form div.container div.input-box input[type="date"] {
+  font-size: 16px;
+  outline: none;
+  height: 42px;
+  width: 100%;
+  padding: 0 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+body.site div#content section.board-form div.container div.text-box textarea {
+  min-height: 200px;
+  width: 100%;
+  border: none;
+  background: #e4e4e4;
+  padding: 20px;
+}
+
+body.site div#content section.board-form div.container div.file-box textarea {
+  min-height: 200px;
+  width: 100%;
+  border: none;
+  background: #e4e4e4;
+  padding: 20px;
 }
 
 body.site div#content section.main-notice div.container > ul {

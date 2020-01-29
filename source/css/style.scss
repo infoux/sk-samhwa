@@ -570,6 +570,7 @@ body {
             position:fixed;
             z-index:999;
             background:#efefef;
+            border-bottom:1px solid #ccc;
             left:0;
             right:0;
             top:62px;
@@ -960,12 +961,26 @@ body {
 
                         input[type="text"],
                         input[type="date"] {
+                            font-size:16px;
                             outline:none;
                             height:42px;
                             width:100%;
                             padding:0 10px;
                             border:none;
                             border-bottom:2px solid #333;
+                        }
+
+                        &.period {
+                            font-size:0;
+                            input  {
+                                width:calc(50% - 20px);
+                            }
+                            span {
+                                display:inline-block;
+                                width:40px;
+                                text-align:center;
+                                font-size:16px;
+                            }
                         }
                     }
 
@@ -1055,6 +1070,53 @@ body {
                                     font-size:22px;
                                 }
                             }
+                        }
+                    }
+
+
+                }
+            }
+
+            section.board-form {
+                div.container {
+                    padding-top:20px;
+
+                    div.input-box {
+                        padding-bottom:10px;
+                        position:relative;
+
+                        input[type="text"],
+                        input[type="date"] {
+                            font-size:16px;
+                            outline:none;
+                            height:42px;
+                            width:100%;
+                            padding:0 10px;
+                            border:none;
+                            border-bottom:2px solid #333;
+                        }
+
+                    }
+
+                    div.text-box {
+
+                        textarea {
+                            min-height:200px;
+                            width:100%;
+                            border:none;
+                            background:#e4e4e4;
+                            padding:20px;
+                        }
+                    }
+
+                    div.file-box {
+
+                        textarea {
+                            min-height:200px;
+                            width:100%;
+                            border:none;
+                            background:#e4e4e4;
+                            padding:20px;
                         }
                     }
 
