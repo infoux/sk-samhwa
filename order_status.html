@@ -95,13 +95,45 @@
     <!-- S:mainContent -->
     <div id="content">
 
-        <article class="tabs">
+        <article class="search-forms">
             <div class="container">
-                <input type="radio" id="tab01" name="tab" checked>
-                <label for="tab01">주문일 기준</label>
 
-                <input type="radio" id="tab02" name="tab">
-                <label for="tab02">출하일 기준</label>
+                <h2 class="stitle">주문 검색</h2>
+
+                <div class="radio-box">
+                    <input type="radio" id="tab01" name="tab" checked>
+                    <label for="tab01">주문일 기준</label>
+
+                    <input type="radio" id="tab02" name="tab">
+                    <label for="tab02">출하일 기준</label>
+                </div>
+                <input type="checkbox" id="detail">
+                
+                <div class="detail-search">
+
+
+                    <h3 class="btitle">기간설정</h2>
+                    <div class="input-box period">
+                        <input type="date" placeholder="시작 날짜를 선택하세요">
+                        <span>~</span>
+                        <input type="date" placeholder="종료 날짜를 선택하세요">
+                    </div>
+                    
+                    <h3 class="btitle">주문번호</h2>
+                    <div class="input-box">
+                        <input type="text" placeholder="주문번호를 입력하세요">
+                    </div>
+                    
+                    <h3 class="btitle">상품명</h2>
+                    <div class="input-box">
+                        <input type="text" placeholder="상품명을 입력하세요">
+                    </div>
+    
+                    <a class="btn small main">주문검색</a>
+
+                </div>
+
+                <label for="detail"><i class='bx bx-plus'></i> 상세검색</label>
             </div>
         </article>
 

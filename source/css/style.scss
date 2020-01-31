@@ -216,43 +216,179 @@ body {
         }
     }
 
-    article.tabs {
+    article.search-forms {
         display:inline-block;
         width:100%;
         padding:20px 0 0;
 
 
         div.container {
-            padding:5px;
-            font-size:0;
-            background:#e4e4e4;
-            border-radius:8px;
-            
 
-            input[type="radio"] {
+            div.radio-box {
+                
+                padding:5px;
+                font-size:0;
+                background:#e4e4e4;
+                border-radius:8px;
+                
+
+                input[type="radio"] {
+                    display:none;
+                }
+
+                label {
+                    display:inline-block;
+                    font-size:16px;
+                    width:50%;
+                    text-align:center;
+                    padding:12px 0;
+
+                    &:first-of-type {
+                        border-radius:6px 0 0 6px;
+                    }
+
+                    &:last-of-type {
+                        border-radius:0 6px 6px 0;
+                    }
+                }
+
+                input[type="radio"]:checked + label {
+                    border-radius:6px;
+                    background:#ff7d26;
+                    color:#fff;
+                }
+            }
+
+            input#detail {
                 display:none;
             }
 
-            label {
-                display:inline-block;
-                font-size:16px;
-                width:50%;
+            input#detail + div {
+                height:0;
+                overflow:hidden;
+                margin:10px 0 0;
+                border-bottom:1px solid #ccc;
+            }
+            input#detail + div + label  {
+                display:block;
+                background:#f4f4f4;
                 text-align:center;
-                padding:12px 0;
+                padding:6px 0;
+                border-radius:0 0 5px 5px;
+                margin:0 auto;
+            }
+            
 
-                &:first-of-type {
-                    border-radius:6px 0 0 6px;
-                }
+            input#detail:checked + div {
+                height:auto;
+                padding:20px;
+                border:5px solid #e4e4e4;
+                border-radius:8px 8px 0 0;
 
-                &:last-of-type {
-                    border-radius:0 6px 6px 0;
-                }
+
+
+
+                    div.input-box {
+                        padding-bottom:10px;
+                        position:relative;
+                        font-size:0;
+
+                        i {
+                            position:absolute;
+                            width:40px;
+                            line-height:38px;
+                            text-align:center;
+                            right:0;
+                            top:0;
+                            font-size:22px;
+                            background:#fff;
+                        }
+
+                        input {
+                            font-size:16px;
+                            outline:none;
+                            height:42px;
+                            width:100%;
+                            padding:0 10px;
+                            border:none;
+                            border-bottom:2px solid #333;
+                        }
+
+                        label {
+                            vertical-align:top;
+                            display:inline-block;
+                            line-height:40px;
+                            font-size:14px;
+                            width:100px;
+                            border-bottom:2px solid #333;
+                            font-weight:600;
+                        }
+
+                        label + input {
+                            display:inline-block;
+                            width:calc(100% - 100px);
+                        }
+
+                        &.period {
+                            font-size:0;
+                            input  {
+                                width:calc(50% - 20px);
+                            }
+                            span {
+                                display:inline-block;
+                                width:40px;
+                                text-align:center;
+                                font-size:16px;
+                            }
+                        }
+                    }
+
+                    div.select-box {
+                        position:relative;
+                        padding-bottom:10px;
+                        font-size:0;
+
+                        i {
+                            position:absolute;
+                            width:40px;
+                            line-height:38px;
+                            text-align:center;
+                            right:0;
+                            top:0;
+                            font-size:22px;
+                            background:#fff;
+                        }
+                        
+                        select {
+                            outline:none;
+                            font-size:16px;
+                            height:42px;
+                            width:100%;
+                            padding:0 10px;
+                            border:none;
+                            border-bottom:2px solid #333;
+                        }
+
+                        label {
+                            vertical-align:top;
+                            display:inline-block;
+                            line-height:40px;
+                            font-size:14px;
+                            width:80px;
+                            border-bottom:2px solid #333;
+                            font-weight:600;
+                        }
+
+                        label + select {
+                            display:inline-block;
+                            width:calc(100% - 80px);
+                        }
+                    }
+
+
             }
 
-            input[type="radio"]:checked + label {
-                border-radius:6px;
-                background:#e00029;
-                color:#fff;
+            input#detail:checked + div + label  {
             }
         }
     }
@@ -780,6 +916,12 @@ body {
 
             h2.stitle {
                 font-size:20px;
+                font-weight:600;
+                margin:10px 0;
+            }
+
+            h3.btitle {
+                font-size:16px;
                 font-weight:600;
                 margin:20px 0 14px;
             }
