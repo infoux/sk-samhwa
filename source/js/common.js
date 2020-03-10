@@ -36,6 +36,15 @@ try {
 
 
 
+    $(".sales-data h4").on("click", function(){
+        var opens = $(this).attr("data");
+        $(this).parent().find("h4").removeClass("active");
+        $(this).parent().find(".data").removeClass("active");
+
+        $(this).addClass("active");
+        $(this).parent().find("#"+ opens).addClass("active");
+    });
+
 
 
     $(".toggle-menu").on("click", function(){

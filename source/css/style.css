@@ -1512,11 +1512,28 @@ body.site div#content section.sales-data div.container ul li h4 {
   font-size: 14px;
   border-bottom: 1px solid #ccc;
   font-weight: 400;
-  background: #555;
+  background: #888;
   color: #fff;
 }
 
-body.site div#content section.sales-data div.container ul li dl {
+body.site div#content section.sales-data div.container ul li h4.active {
+  background: #555;
+}
+
+body.site div#content section.sales-data div.container ul li div.data {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body.site div#content section.sales-data div.container ul li div.data.active {
+  max-height: 1000px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body.site div#content section.sales-data div.container ul li div.data dl {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1526,70 +1543,70 @@ body.site div#content section.sales-data div.container ul li dl {
   text-align: center;
 }
 
-body.site div#content section.sales-data div.container ul li dl.td3 dt,
-body.site div#content section.sales-data div.container ul li dl.td3 dd {
+body.site div#content section.sales-data div.container ul li div.data dl.td3 dt,
+body.site div#content section.sales-data div.container ul li div.data dl.td3 dd {
   width: calc(100% / 3);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(2) {
   left: calc(100% / 3);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(3) {
   left: calc((100% / 3) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td4 dt,
-body.site div#content section.sales-data div.container ul li dl.td4 dd {
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dt,
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dd {
   width: calc(100% / 4);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(2) {
   left: calc(100% / 4);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(3) {
   left: calc((100% / 4) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(4) {
+body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(4) {
   left: calc((100% / 4) * 3);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt,
-body.site div#content section.sales-data div.container ul li dl.td5 dd {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt,
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dd {
   width: calc(100% / 5);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(2) {
   left: calc(100% / 5);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(3) {
   left: calc((100% / 5) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(4) {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(4) {
   left: calc((100% / 5) * 3);
 }
 
-body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(5) {
+body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(5) {
   left: calc((100% / 5) * 4);
 }
 
-body.site div#content section.sales-data div.container ul li dl dt {
+body.site div#content section.sales-data div.container ul li div.data dl dt {
   font-size: 16px;
   display: block;
   position: absolute;
@@ -1599,7 +1616,7 @@ body.site div#content section.sales-data div.container ul li dl dt {
   line-height: 42px;
 }
 
-body.site div#content section.sales-data div.container ul li dl dd {
+body.site div#content section.sales-data div.container ul li div.data dl dd {
   margin: 42px 0 0;
   position: relative;
   display: inline-block;
@@ -1608,20 +1625,79 @@ body.site div#content section.sales-data div.container ul li dl dd {
   line-height: 42px;
 }
 
-body.site div#content section.sales-data div.container ul li dl dd:last-of-type {
+body.site div#content section.sales-data div.container ul li div.data dl dd:last-of-type {
   border: none;
 }
 
-body.site div#content section.sales-data div.container ul li dl dd.status {
+body.site div#content section.sales-data div.container ul li div.data dl dd.status {
   font-weight: 800;
 }
 
-body.site div#content section.sales-data div.container ul li dl dd.status.up {
+body.site div#content section.sales-data div.container ul li div.data dl dd.status.up {
   color: #F44336;
 }
 
-body.site div#content section.sales-data div.container ul li dl dd.status.down {
+body.site div#content section.sales-data div.container ul li div.data dl dd.status.down {
   color: #2196F3;
+}
+
+body.site div#content section.sell-data div.container ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+body.site div#content section.sell-data div.container ul li {
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+body.site div#content section.sell-data div.container ul li h3 {
+  margin: 0;
+  padding: 14px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+body.site div#content section.sell-data div.container ul li table {
+  width: 100%;
+}
+
+body.site div#content section.sell-data div.container ul li table tr th {
+  background: #555;
+  color: #fff;
+  font-weight: normal;
+}
+
+body.site div#content section.sell-data div.container ul li table tr th,
+body.site div#content section.sell-data div.container ul li table tr td {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 30%;
+  padding: 5px 0;
+}
+
+body.site div#content section.sell-data div.container ul li table tr th:first-of-type,
+body.site div#content section.sell-data div.container ul li table tr td:first-of-type {
+  width: 10%;
+}
+
+body.site div#content section.sell-data div.container ul li table tr th:last-of-type,
+body.site div#content section.sell-data div.container ul li table tr td:last-of-type {
+  border-right: none;
+}
+
+body.site div#content section.sell-data div.container ul li table tr th span,
+body.site div#content section.sell-data div.container ul li table tr td span {
+  display: block;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+body.site div#content section.sell-data div.container ul li table tr:last-of-type td {
+  border-bottom: none;
 }
 
 body.site div#content section.order-form div.container div.input-box {
