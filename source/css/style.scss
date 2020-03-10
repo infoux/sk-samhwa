@@ -1130,131 +1130,143 @@ body {
                                     @include ani(0.5s);
                                 }
 
-                                dl {
-                                    margin:0;
-                                    padding:0;
-                                    display:inline-block;
-                                    position:relative;
-                                    width:100%;
-                                    font-size:0;
-                                    text-align:center;
-    
-                                    &.td3 {
-                                        dt,
-                                        dd {
-                                            width:calc(100% / 3);
-                                        }
-    
-                                        dt {
-    
-                                            &:nth-of-type(1) {
-                                                left:0;
-                                            }
-    
-                                            &:nth-of-type(2) {
-                                                left:calc(100% / 3);
-                                            }
-    
-                                            &:nth-of-type(3) {
-                                                left:calc((100% / 3) * 2);
-                                            }
-                                        }
-                                    }
-    
-                                    &.td4 {
-                                        dt,
-                                        dd {
-                                            width:calc(100% / 4);
-                                        }
-    
-                                        dt {
-    
-                                            &:nth-of-type(1) {
-                                                left:0;
-                                            }
-    
-                                            &:nth-of-type(2) {
-                                                left:calc(100% / 4);
-                                            }
-    
-                                            &:nth-of-type(3) {
-                                                left:calc((100% / 4) * 2);
-                                            }
-    
-                                            &:nth-of-type(4) {
-                                                left:calc((100% / 4) * 3);
-                                            }
-                                        }
-                                    }
-    
-    
-                                    &.td5 {
-                                        dt,
-                                        dd {
-                                            width:calc(100% / 5);
-                                        }
-    
-                                        dt {
-    
-                                            &:nth-of-type(1) {
-                                                left:0;
-                                            }
-    
-                                            &:nth-of-type(2) {
-                                                left:calc(100% / 5);
-                                            }
-    
-                                            &:nth-of-type(3) {
-                                                left:calc((100% / 5) * 2);
-                                            }
-    
-                                            &:nth-of-type(4) {
-                                                left:calc((100% / 5) * 3);
-                                            }
-    
-                                            &:nth-of-type(5) {
-                                                left:calc((100% / 5) * 4);
-                                            }
-                                        }
-                                    }
-    
-    
-                                    dt {
-                                        font-size:16px;
-                                        display:block;
-                                        position:absolute;
-                                        left:0;
-                                        top:0;
-                                        background:#e4e4e4;
-                                        line-height:42px;
-                                    }
-    
+                            }
+
+                            dl {
+                                margin:0;
+                                padding:0;
+                                display:inline-block;
+                                position:relative;
+                                width:100%;
+                                font-size:0;
+                                text-align:center;
+
+                                &.td3 {
+                                    dt,
                                     dd {
-                                        margin:42px 0 0;
-                                        position:relative;
-                                        display:inline-block;
-                                        font-size:14px;
-                                        border-right:1px solid #ccc;
-                                        line-height:42px;
-    
-                                        &:last-of-type {
-                                            border:none;
+                                        width:calc(100% / 3);
+                                    }
+
+                                    dt {
+
+                                        &:nth-of-type(1) {
+                                            left:0;
                                         }
-    
-                                        &.status {
-                                            font-weight:800;
-    
-                                            &.up {
-                                                color:#F44336;
-                                            }
-    
-                                            &.down {
-                                                color:#2196F3;
-                                            }
+
+                                        &:nth-of-type(2) {
+                                            left:calc(100% / 3);
+                                        }
+
+                                        &:nth-of-type(3) {
+                                            left:calc((100% / 3) * 2);
                                         }
                                     }
                                 }
 
+                                &.td4 {
+                                    dt,
+                                    dd {
+                                        width:calc(100% / 4);
+                                    }
+
+                                    dt {
+
+                                        &:nth-of-type(1) {
+                                            left:0;
+                                        }
+
+                                        &:nth-of-type(2) {
+                                            left:calc(100% / 4);
+                                        }
+
+                                        &:nth-of-type(3) {
+                                            left:calc((100% / 4) * 2);
+                                        }
+
+                                        &:nth-of-type(4) {
+                                            left:calc((100% / 4) * 3);
+                                        }
+                                    }
+                                }
+
+
+                                &.td5 {
+                                    dt,
+                                    dd {
+                                        width:calc(100% / 5);
+                                    }
+
+                                    dt {
+
+                                        &:nth-of-type(1) {
+                                            left:0;
+                                        }
+
+                                        &:nth-of-type(2) {
+                                            left:calc(100% / 5);
+                                        }
+
+                                        &:nth-of-type(3) {
+                                            left:calc((100% / 5) * 2);
+                                        }
+
+                                        &:nth-of-type(4) {
+                                            left:calc((100% / 5) * 3);
+                                        }
+
+                                        &:nth-of-type(5) {
+                                            left:calc((100% / 5) * 4);
+                                        }
+                                    }
+                                }
+
+
+                                dt {
+                                    font-size:16px;
+                                    display:block;
+                                    position:absolute;
+                                    left:0;
+                                    top:0;
+                                    background:#e4e4e4;
+                                    line-height:42px;
+                                    border-right:1px solid #aaa;
+                                    
+                                    &:last-of-type {
+                                        border:none;
+                                    }
+                                }
+
+                                dd {
+                                    margin:42px 0 0;
+                                    position:relative;
+                                    display:inline-block;
+                                    font-size:14px;
+                                    border-right:1px solid #ccc;
+                                    line-height:42px;
+
+                                    &:last-of-type {
+                                        border:none;
+                                    }
+
+                                    &.status {
+                                        font-weight:800;
+
+                                        &.up {
+                                            color:#F44336;
+                                        }
+
+                                        &.down {
+                                            color:#2196F3;
+                                        }
+                                    }
+                                }
+                            }
+
+                            p.limit {
+                                margin:0;
+                                padding:10px 20px;
+                                border-top:1px solid #ccc;
+                                background:#f4f4f4;
                             }
 
                         }

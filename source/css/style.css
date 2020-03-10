@@ -1533,7 +1533,7 @@ body.site div#content section.sales-data div.container ul li div.data.active {
   transition: all 0.5s ease;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl {
+body.site div#content section.sales-data div.container ul li dl {
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1543,70 +1543,70 @@ body.site div#content section.sales-data div.container ul li div.data dl {
   text-align: center;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td3 dt,
-body.site div#content section.sales-data div.container ul li div.data dl.td3 dd {
+body.site div#content section.sales-data div.container ul li dl.td3 dt,
+body.site div#content section.sales-data div.container ul li dl.td3 dd {
   width: calc(100% / 3);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(2) {
   left: calc(100% / 3);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td3 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li dl.td3 dt:nth-of-type(3) {
   left: calc((100% / 3) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dt,
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dd {
+body.site div#content section.sales-data div.container ul li dl.td4 dt,
+body.site div#content section.sales-data div.container ul li dl.td4 dd {
   width: calc(100% / 4);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(2) {
   left: calc(100% / 4);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(3) {
   left: calc((100% / 4) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td4 dt:nth-of-type(4) {
+body.site div#content section.sales-data div.container ul li dl.td4 dt:nth-of-type(4) {
   left: calc((100% / 4) * 3);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt,
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dd {
+body.site div#content section.sales-data div.container ul li dl.td5 dt,
+body.site div#content section.sales-data div.container ul li dl.td5 dd {
   width: calc(100% / 5);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(1) {
+body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(1) {
   left: 0;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(2) {
+body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(2) {
   left: calc(100% / 5);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(3) {
+body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(3) {
   left: calc((100% / 5) * 2);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(4) {
+body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(4) {
   left: calc((100% / 5) * 3);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl.td5 dt:nth-of-type(5) {
+body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-type(5) {
   left: calc((100% / 5) * 4);
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dt {
+body.site div#content section.sales-data div.container ul li dl dt {
   font-size: 16px;
   display: block;
   position: absolute;
@@ -1614,9 +1614,14 @@ body.site div#content section.sales-data div.container ul li div.data dl dt {
   top: 0;
   background: #e4e4e4;
   line-height: 42px;
+  border-right: 1px solid #aaa;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dd {
+body.site div#content section.sales-data div.container ul li dl dt:last-of-type {
+  border: none;
+}
+
+body.site div#content section.sales-data div.container ul li dl dd {
   margin: 42px 0 0;
   position: relative;
   display: inline-block;
@@ -1625,20 +1630,27 @@ body.site div#content section.sales-data div.container ul li div.data dl dd {
   line-height: 42px;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dd:last-of-type {
+body.site div#content section.sales-data div.container ul li dl dd:last-of-type {
   border: none;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dd.status {
+body.site div#content section.sales-data div.container ul li dl dd.status {
   font-weight: 800;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dd.status.up {
+body.site div#content section.sales-data div.container ul li dl dd.status.up {
   color: #F44336;
 }
 
-body.site div#content section.sales-data div.container ul li div.data dl dd.status.down {
+body.site div#content section.sales-data div.container ul li dl dd.status.down {
   color: #2196F3;
+}
+
+body.site div#content section.sales-data div.container ul li p.limit {
+  margin: 0;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  background: #f4f4f4;
 }
 
 body.site div#content section.sell-data div.container ul {

@@ -36,7 +36,7 @@ try {
 
 
 
-    $(".sales-data h4").on("click", function(){
+    $(".type02 h4").on("click", function(){
         var opens = $(this).attr("data");
         $(this).parent().find("h4").removeClass("active");
         $(this).parent().find(".data").removeClass("active");
