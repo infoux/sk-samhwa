@@ -1606,6 +1606,35 @@ body.site div#content section.sales-data div.container ul li dl.td5 dt:nth-of-ty
   left: calc((100% / 5) * 4);
 }
 
+body.site div#content section.sales-data div.container ul li dl.td6 dt,
+body.site div#content section.sales-data div.container ul li dl.td6 dd {
+  width: calc(100% / 6);
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(1) {
+  left: 0;
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(2) {
+  left: calc(100% / 6);
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(3) {
+  left: calc((100% / 6) * 2);
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(4) {
+  left: calc((100% / 6) * 3);
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(5) {
+  left: calc((100% / 6) * 4);
+}
+
+body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-type(6) {
+  left: calc((100% / 6) * 5);
+}
+
 body.site div#content section.sales-data div.container ul li dl dt {
   font-size: 16px;
   display: block;
