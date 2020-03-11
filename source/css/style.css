@@ -1155,7 +1155,7 @@ body.site article.sub_navi div.container button i {
 
 body.site aside {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -1168,8 +1168,7 @@ body.site aside {
 }
 
 body.site aside h2 {
-  position: absolute;
-  left: -250px;
+  position: relative;
   height: 108px;
   overflow: hidden;
   background: #ff7d26;
@@ -1191,12 +1190,11 @@ body.site aside h2 small {
 }
 
 body.site aside nav {
-  position: absolute;
-  left: -250px;
-  top: 108px;
-  bottom: 0;
+  position: relative;
   width: 250px;
   background: #fff;
+  height: calc(100vh - 108px);
+  overflow-y: scroll;
 }
 
 body.site aside nav i {
@@ -1695,16 +1693,38 @@ body.site div#content section.sell-data div.container ul {
 }
 
 body.site div#content section.sell-data div.container ul li {
+  height: 52px;
+  overflow: hidden;
   border: 1px solid #ccc;
   margin-bottom: 14px;
   border-radius: 10px;
 }
 
+body.site div#content section.sell-data div.container ul li.open {
+  height: auto;
+}
+
 body.site div#content section.sell-data div.container ul li h3 {
+  position: relative;
   margin: 0;
   padding: 14px;
   font-size: 18px;
   border-bottom: 1px solid #ccc;
+}
+
+body.site div#content section.sell-data div.container ul li h3 button {
+  position: absolute;
+  font-size: 0;
+  border: 0;
+  background: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 20px;
+}
+
+body.site div#content section.sell-data div.container ul li h3 button i {
+  font-size: 18px;
 }
 
 body.site div#content section.sell-data div.container ul li table {

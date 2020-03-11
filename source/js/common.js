@@ -45,6 +45,15 @@ try {
         $(this).parent().find("#"+ opens).addClass("active");
     });
 
+    
+
+    $(".sell-data h3 button.switch").on("click", function(){
+        var opens = $(this).attr("data");
+        $(this).parent().parent().toggleClass("open");
+
+    });
+
+
 
 
     $(".toggle-menu").on("click", function(){
