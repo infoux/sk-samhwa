@@ -1140,6 +1140,7 @@ body {
                                 width:100%;
                                 font-size:0;
                                 text-align:center;
+                                vertical-align:top;
 
                                 &.td3 {
                                     dt,
@@ -1278,7 +1279,9 @@ body {
                                     display:inline-block;
                                     font-size:12px;
                                     border-right:1px solid #ccc;
-                                    line-height:42px;
+                                    min-height:54px;
+                                    padding:10px 0;
+                                    vertical-align:top;
 
                                     &:last-of-type {
                                         border:none;

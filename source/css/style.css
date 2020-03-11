@@ -1541,6 +1541,7 @@ body.site div#content section.sales-data div.container ul li dl {
   width: 100%;
   font-size: 0;
   text-align: center;
+  vertical-align: top;
 }
 
 body.site div#content section.sales-data div.container ul li dl.td3 dt,
@@ -1659,7 +1660,9 @@ body.site div#content section.sales-data div.container ul li dl dd {
   display: inline-block;
   font-size: 12px;
   border-right: 1px solid #ccc;
-  line-height: 42px;
+  min-height: 54px;
+  padding: 10px 0;
+  vertical-align: top;
 }
 
 body.site div#content section.sales-data div.container ul li dl dd:last-of-type {
