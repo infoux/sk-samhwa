@@ -526,7 +526,7 @@ body {
 
 body .btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -544,7 +544,7 @@ body .btn.small {
   width: 100%;
   line-height: 34px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body .btn.inline {
@@ -619,7 +619,7 @@ body article.search-forms div.container div.radio-box input[type="radio"] {
 
 body article.search-forms div.container div.radio-box label {
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   width: 50%;
   text-align: center;
   padding: 12px 0;
@@ -684,7 +684,7 @@ body article.search-forms div.container input#detail:checked + div div.input-box
 }
 
 body article.search-forms div.container input#detail:checked + div div.input-box input {
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
   height: 42px;
   width: 100%;
@@ -697,7 +697,7 @@ body article.search-forms div.container input#detail:checked + div div.input-box
   vertical-align: top;
   display: inline-block;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   width: 100px;
   border-bottom: 2px solid #333;
   font-weight: 600;
@@ -720,7 +720,7 @@ body article.search-forms div.container input#detail:checked + div div.input-box
   display: inline-block;
   width: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body article.search-forms div.container input#detail:checked + div div.select-box {
@@ -742,7 +742,7 @@ body article.search-forms div.container input#detail:checked + div div.select-bo
 
 body article.search-forms div.container input#detail:checked + div div.select-box select {
   outline: none;
-  font-size: 14px;
+  font-size: 12px;
   height: 42px;
   width: 100%;
   padding: 0 10px;
@@ -754,7 +754,7 @@ body article.search-forms div.container input#detail:checked + div div.select-bo
   vertical-align: top;
   display: inline-block;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   width: 80px;
   border-bottom: 2px solid #333;
   font-weight: 600;
@@ -804,7 +804,7 @@ body .modal .modal-content div {
 
 body .modal .modal-content div ol,
 body .modal .modal-content div ul {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body .modal .modal-content button.modal-close {
@@ -929,7 +929,7 @@ body.login div#content article.login-form fieldset label i {
 body.login div#content article.login-form fieldset input[type="text"],
 body.login div#content article.login-form fieldset input[type="password"] {
   width: calc(100% - 50px);
-  font-size: 14px;
+  font-size: 12px;
   height: 44px;
   border: none;
   border-bottom: 2px solid #aaa;
@@ -968,7 +968,7 @@ body.login div#content article.login-form fieldset input[type="checkbox"] {
 
 body.login div#content article.login-form fieldset input[type="checkbox"] + label {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   width: auto;
   margin: 10px 0 40px;
   padding: 0 0 0 50px;
@@ -1185,7 +1185,7 @@ body.site aside h2 {
 
 body.site aside h2 small {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   padding: 4px 0 0;
 }
@@ -1329,7 +1329,7 @@ body.site div#content h2.stitle {
 }
 
 body.site div#content h3.btitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   margin: 20px 0 14px;
 }
@@ -1351,7 +1351,7 @@ body.site div#content section.main-header div.container h2 {
 
 body.site div#content section.main-header div.container h2 small {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body.site div#content section.main-header div.container ul {
@@ -1429,7 +1429,7 @@ body.site div#content section.latest-order div.container > ul input[type="radio"
 }
 
 body.site div#content section.latest-order div.container > ul input[type="radio"] + label + div h3 small {
-  font-size: 14px;
+  font-size: 12px;
   display: block;
   margin-bottom: 26px;
   font-weight: 600;
@@ -1509,7 +1509,7 @@ body.site div#content section.sales-data div.container ul li h3 {
 body.site div#content section.sales-data div.container ul li h4 {
   margin: 0;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 12px;
   border-bottom: 1px solid #ccc;
   font-weight: 400;
   background: #888;
@@ -1636,7 +1636,7 @@ body.site div#content section.sales-data div.container ul li dl.td6 dt:nth-of-ty
 }
 
 body.site div#content section.sales-data div.container ul li dl dt {
-  font-size: 14px;
+  font-size: 12px;
   display: block;
   position: absolute;
   left: 0;
@@ -1657,12 +1657,9 @@ body.site div#content section.sales-data div.container ul li dl dd {
   margin: 42px 0 0;
   position: relative;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   border-right: 1px solid #ccc;
   line-height: 42px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 body.site div#content section.sales-data div.container ul li dl dd:last-of-type {
@@ -1765,7 +1762,7 @@ body.site div#content section.order-form div.container div.input-box i {
 }
 
 body.site div#content section.order-form div.container div.input-box input {
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
   height: 42px;
   width: 100%;
@@ -1778,7 +1775,7 @@ body.site div#content section.order-form div.container div.input-box label {
   vertical-align: top;
   display: inline-block;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   width: 100px;
   border-bottom: 2px solid #333;
   font-weight: 600;
@@ -1801,7 +1798,7 @@ body.site div#content section.order-form div.container div.input-box.period span
   display: inline-block;
   width: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body.site div#content section.order-form div.container div.select-box {
@@ -1823,7 +1820,7 @@ body.site div#content section.order-form div.container div.select-box i {
 
 body.site div#content section.order-form div.container div.select-box select {
   outline: none;
-  font-size: 14px;
+  font-size: 12px;
   height: 42px;
   width: 100%;
   padding: 0 10px;
@@ -1835,7 +1832,7 @@ body.site div#content section.order-form div.container div.select-box label {
   vertical-align: top;
   display: inline-block;
   line-height: 40px;
-  font-size: 14px;
+  font-size: 12px;
   width: 80px;
   border-bottom: 2px solid #333;
   font-weight: 600;
@@ -1866,11 +1863,11 @@ body.site div#content section.order-form div.container ul.order-list li:last-chi
 
 body.site div#content section.order-form div.container ul.order-list li h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body.site div#content section.order-form div.container ul.order-list li p {
-  font-size: 14px;
+  font-size: 12px;
   color: #777;
   margin: 4px 0 0;
 }
@@ -1905,7 +1902,7 @@ body.site div#content section.board-form div.container div.input-box {
 
 body.site div#content section.board-form div.container div.input-box input[type="text"],
 body.site div#content section.board-form div.container div.input-box input[type="date"] {
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
   height: 42px;
   width: 100%;
@@ -1960,7 +1957,7 @@ body.site div#content section.notice-list div.container > ul > li ul li i {
   position: relative;
   top: 1px;
   margin-right: 4px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body.site div#content section.notice-list.sub div.container {
@@ -1979,7 +1976,7 @@ body.site div#content section.notice-view div.container h2.title {
 body.site div#content section.notice-view div.container h2.title small {
   display: block;
   margin: 0 0 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -2008,7 +2005,7 @@ body.site div#content section.notice-view div.container ul.information li i {
   position: relative;
   top: 1px;
   margin-right: 4px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 body.site div#content section.notice-view div.container div.detail {
@@ -2092,7 +2089,7 @@ body.site div#content section.notice-reply div.container div.write {
 }
 
 body.site div#content section.notice-reply div.container div.write textarea {
-  font-size: 14px;
+  font-size: 12px;
   width: calc(100% - 60px);
   min-height: 70px;
   border: none;

@@ -140,7 +140,7 @@ body {
 
     .btn {
         display:inline-block;
-        font-size:14px;
+        font-size:12px;
         border:none;
         border-radius:5px;
         text-align:center;
@@ -159,7 +159,7 @@ body {
             width:100%;
             line-height:34px;
             font-weight:800;
-            font-size:14px;
+            font-size:12px;
         }
 
         &.inline {
@@ -238,7 +238,7 @@ body {
 
                 label {
                     display:inline-block;
-                    font-size:14px;
+                    font-size:12px;
                     width:50%;
                     text-align:center;
                     padding:12px 0;
@@ -305,7 +305,7 @@ body {
                         }
 
                         input {
-                            font-size:14px;
+                            font-size:12px;
                             outline:none;
                             height:42px;
                             width:100%;
@@ -318,7 +318,7 @@ body {
                             vertical-align:top;
                             display:inline-block;
                             line-height:40px;
-                            font-size:14px;
+                            font-size:12px;
                             width:100px;
                             border-bottom:2px solid #333;
                             font-weight:600;
@@ -338,7 +338,7 @@ body {
                                 display:inline-block;
                                 width:40px;
                                 text-align:center;
-                                font-size:14px;
+                                font-size:12px;
                             }
                         }
                     }
@@ -361,7 +361,7 @@ body {
                         
                         select {
                             outline:none;
-                            font-size:14px;
+                            font-size:12px;
                             height:42px;
                             width:100%;
                             padding:0 10px;
@@ -373,7 +373,7 @@ body {
                             vertical-align:top;
                             display:inline-block;
                             line-height:40px;
-                            font-size:14px;
+                            font-size:12px;
                             width:80px;
                             border-bottom:2px solid #333;
                             font-weight:600;
@@ -430,7 +430,7 @@ body {
 
                 ol,
                 ul {
-                    font-size:14px;
+                    font-size:12px;
                 }
             }
 
@@ -545,7 +545,7 @@ body {
                         input[type="text"],
                         input[type="password"] {
                             width:calc(100% - 50px);
-                            font-size:14px;
+                            font-size:12px;
                             height:44px;
                             border:none;
                             border-bottom:2px solid #aaa;
@@ -567,7 +567,7 @@ body {
 
                         input[type="checkbox"] + label {
                             position:relative;
-                            font-size:14px;
+                            font-size:12px;
                             width:auto;
                             margin:10px 0 40px;
                             padding:0 0 0 50px;
@@ -781,7 +781,7 @@ body {
                 
                 small {
                     display:block;
-                    font-size:14px;
+                    font-size:12px;
                     font-weight:400;
                     padding:4px 0 0;
                 }
@@ -921,7 +921,7 @@ body {
             }
 
             h3.btitle {
-                font-size:14px;
+                font-size:12px;
                 font-weight:600;
                 margin:20px 0 14px;
             }
@@ -940,7 +940,7 @@ body {
 
                         small {
                             font-weight:400;
-                            font-size:14px;
+                            font-size:12px;
                         }
                     }
 
@@ -1019,7 +1019,7 @@ body {
                                 margin:20px 0;
 
                                 small {
-                                    font-size:14px;
+                                    font-size:12px;
                                     display:block;
                                     margin-bottom:26px;
                                     font-weight:600;
@@ -1105,7 +1105,7 @@ body {
                             h4 {
                                 margin:0;
                                 padding:10px 14px;
-                                font-size:14px;
+                                font-size:12px;
                                 border-bottom:1px solid #ccc;
                                 font-weight:400;
                                 background:#888;
@@ -1257,7 +1257,7 @@ body {
 
 
                                 dt {
-                                    font-size:14px;
+                                    font-size:12px;
                                     display:block;
                                     position:absolute;
                                     left:0;
@@ -1276,10 +1276,9 @@ body {
                                     margin:42px 0 0;
                                     position:relative;
                                     display:inline-block;
-                                    font-size:14px;
+                                    font-size:12px;
                                     border-right:1px solid #ccc;
                                     line-height:42px;
-                                    @include ellipse;
 
                                     &:last-of-type {
                                         border:none;
@@ -1398,7 +1397,7 @@ body {
                         }
 
                         input {
-                            font-size:14px;
+                            font-size:12px;
                             outline:none;
                             height:42px;
                             width:100%;
@@ -1411,7 +1410,7 @@ body {
                             vertical-align:top;
                             display:inline-block;
                             line-height:40px;
-                            font-size:14px;
+                            font-size:12px;
                             width:100px;
                             border-bottom:2px solid #333;
                             font-weight:600;
@@ -1431,7 +1430,7 @@ body {
                                 display:inline-block;
                                 width:40px;
                                 text-align:center;
-                                font-size:14px;
+                                font-size:12px;
                             }
                         }
                     }
@@ -1454,7 +1453,7 @@ body {
                         
                         select {
                             outline:none;
-                            font-size:14px;
+                            font-size:12px;
                             height:42px;
                             width:100%;
                             padding:0 10px;
@@ -1466,7 +1465,7 @@ body {
                             vertical-align:top;
                             display:inline-block;
                             line-height:40px;
-                            font-size:14px;
+                            font-size:12px;
                             width:80px;
                             border-bottom:2px solid #333;
                             font-weight:600;
@@ -1495,11 +1494,11 @@ body {
 
                             h3 {
                                 margin:0;
-                                font-size:14px;
+                                font-size:12px;
                             }
 
                             p {
-                                font-size:14px;
+                                font-size:12px;
                                 color:#777;
                                 margin:4px 0 0;
                                 
@@ -1539,7 +1538,7 @@ body {
 
                         input[type="text"],
                         input[type="date"] {
-                            font-size:14px;
+                            font-size:12px;
                             outline:none;
                             height:42px;
                             width:100%;
@@ -1605,7 +1604,7 @@ body {
                                         position:relative;
                                         top:1px;
                                         margin-right:4px;
-                                        font-size:14px;
+                                        font-size:12px;
                                     }
                                 }
 
@@ -1640,7 +1639,7 @@ body {
                         small {
                             display:block;
                             margin:0 0 4px;
-                            font-size:14px;
+                            font-size:12px;
                             font-weight:400;
 
                             &.tag01 {
@@ -1668,7 +1667,7 @@ body {
                                 position:relative;
                                 top:1px;
                                 margin-right:4px;
-                                font-size:14px;
+                                font-size:12px;
                             }
                         }
 
@@ -1761,7 +1760,7 @@ body {
                         margin:20px 0 30px;
                         
                         textarea {
-                            font-size:14px;
+                            font-size:12px;
                             width:calc(100% - 60px);
                             min-height:70px;
                             border:none;
