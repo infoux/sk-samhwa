@@ -1465,6 +1465,24 @@ body.site div#content section.latest-order div.container > ul input[type="radio"
   background: #888888;
 }
 
+body.site div#content section.latest-order div.container > ul input[type="radio"] + label + div button.del {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: red;
+}
+
+body.site div#content section.latest-order div.container > ul input[type="radio"] + label + div button.del i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  color: #000;
+}
+
 body.site div#content section.latest-order div.container > ul input[type="radio"]:checked + label {
   border: none;
   color: #333;
