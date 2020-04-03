@@ -2049,8 +2049,17 @@ body.site div#content section.notice-view div.container ul.information li i {
   font-size: 12px;
 }
 
-body.site div#content section.notice-view div.container div.detail {
+body.site div#content section.notice-view div.container div.pic-area {
   padding: 20px 0;
+  text-align: center;
+}
+
+body.site div#content section.notice-view div.container div.pic-area img {
+  max-width: 100%;
+}
+
+body.site div#content section.notice-view div.container div.detail {
+  padding: 20px 0 10px;
   word-break: keep-all;
 }
 

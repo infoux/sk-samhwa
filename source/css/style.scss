@@ -1715,8 +1715,17 @@ body {
 
                     }
 
-                    div.detail {
+                    div.pic-area {
                         padding:20px 0;
+                        text-align:center;
+
+                        img {
+                            max-width:100%;
+                        }
+                    }
+
+                    div.detail {
+                        padding:20px 0 10px;
                         word-break:keep-all;
                     }
 
