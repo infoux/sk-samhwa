@@ -56,6 +56,20 @@ try {
 
 
 
+    $(".open-pop").on("click", function(){
+        $("div.pop").removeClass("on");
+        $(this).parent().parent().parent().find("div.pop").addClass("on");
+        
+    });
+
+    $("div.pop h4 i").on("click", function(){
+        $(this).parent().parent().parent().removeClass("on");
+        
+    });
+
+
+
+
     $(".toggle-menu").on("click", function(){
         
         $("aside").css("height", $(document).height());
