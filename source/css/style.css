@@ -1195,6 +1195,7 @@ body.site aside nav {
   background: #fff;
   height: calc(100vh - 108px);
   overflow-y: scroll;
+  padding-bottom: 100px;
 }
 
 body.site aside nav i {
@@ -1714,7 +1715,8 @@ body.site div#content section.sales-data div.container ul li dl dt {
   left: 0;
   top: 0;
   background: #e4e4e4;
-  line-height: 42px;
+  height: 46px;
+  padding: 13px 0;
   border-right: 1px solid #aaa;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1725,14 +1727,18 @@ body.site div#content section.sales-data div.container ul li dl dt:last-of-type 
   border: none;
 }
 
+body.site div#content section.sales-data div.container ul li dl dt p {
+  margin: -7px 0 0;
+}
+
 body.site div#content section.sales-data div.container ul li dl dd {
-  margin: 42px 0 0;
+  margin: 46px 0 0;
   position: relative;
   display: inline-block;
   font-size: 12px;
   border-right: 1px solid #ccc;
   min-height: 54px;
-  padding: 10px 0;
+  padding: 16px 0 0;
   vertical-align: top;
 }
 
@@ -1757,6 +1763,10 @@ body.site div#content section.sales-data div.container ul li dl dd span.open-pop
   text-decoration: underline;
   color: #2196F3;
   cursor: pointer;
+}
+
+body.site div#content section.sales-data div.container ul li dl dd p {
+  margin: -7px 0 0;
 }
 
 body.site div#content section.sales-data div.container ul li p.limit {

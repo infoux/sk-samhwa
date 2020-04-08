@@ -792,6 +792,7 @@ body {
                 background:#fff;
                 height:calc(100vh - 108px);
                 overflow-y:scroll;
+                padding-bottom:100px;
 
                 i {
                     background:#ccc;
@@ -1336,23 +1337,29 @@ body {
                                     left:0;
                                     top:0;
                                     background:#e4e4e4;
-                                    line-height:42px;
+                                    height:46px;
+                                    padding:13px 0;
                                     border-right:1px solid #aaa;
                                     @include ellipse;
                                     
                                     &:last-of-type {
                                         border:none;
                                     }
+
+                                    p {
+                                        margin:-7px 0 0;
+
+                                    }
                                 }
 
                                 dd {
-                                    margin:42px 0 0;
+                                    margin:46px 0 0;
                                     position:relative;
                                     display:inline-block;
                                     font-size:12px;
                                     border-right:1px solid #ccc;
                                     min-height:54px;
-                                    padding:10px 0;
+                                    padding:16px 0 0;
                                     vertical-align:top;
 
                                     &:last-of-type {
@@ -1376,6 +1383,11 @@ body {
                                         text-decoration:underline;
                                         color:#2196F3;
                                         cursor:pointer;
+                                    }
+
+                                    p {
+                                        margin:-7px 0 0;
+
                                     }
                                 }
                             }
