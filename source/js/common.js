@@ -62,11 +62,14 @@ try {
         
     });
 
-    $("div.pop h4 i").on("click", function(){
-        $(this).parent().parent().parent().removeClass("on");
+    // $("div.pop h4 i").on("click", function(){
+    //     $(this).parent().parent().parent().removeClass("on");
         
-    });
+    // });
+    $("div.pop h4").on("click", 'i', function(){
+        $(this).parent().parent().parent().removeClass("on");
 
+    });
 
 
 
