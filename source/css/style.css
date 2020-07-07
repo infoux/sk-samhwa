@@ -1526,6 +1526,8 @@ body.site div#content section.sales-data div.container div.pop div.outline {
   margin: 100px auto 0;
   padding: 10px;
   background: #fff;
+  max-height: calc(100vh - 200px);
+  overflow-y: scroll;
 }
 
 body.site div#content section.sales-data div.container div.pop div.outline h4 {
